@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "PlatformIO Build",
+            "type": "shell",
+            "command": "cd /Users/kumaresan/Work/Electronics/esp-idf-projects/esp32-ir-atomberg && pio run",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "PlatformIO Upload",
+            "type": "shell",
+            "command": "cd /Users/kumaresan/Work/Electronics/esp-idf-projects/esp32-ir-atomberg && pio run --target upload",
+            "group": {
+                "kind": "test"
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "PlatformIO Monitor",
+            "type": "shell",
+            "command": "cd /Users/kumaresan/Work/Electronics/esp-idf-projects/esp32-ir-atomberg && pio device monitor",
+            "isBackground": true,
+            "problemMatcher": []
+        }
+    ]
+}
